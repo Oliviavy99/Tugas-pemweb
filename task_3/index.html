@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Halaman Pendaftaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Pendaftaran Peserta</h1>
+
+  <!-- box dibuat dengan flexbox supaya isinya rapi dari atas ke bawah -->
+  <div class="box">
+
+    <!-- method="get" : data dikirim lewat query string di URL -->
+    <!-- action="detail.html" : setelah submit pindah ke halaman detail -->
+    <form action="detail.html" method="get">
+
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="contoh@email.com">
+
+      <label for="tgl">Tanggal Lahir</label>
+      <input type="date" id="tgl" name="tgl_lahir">
+
+      <label for="prodi">Program Studi</label>
+      <select id="prodi" name="prodi">
+        <option value="">Pilih Program Studi</option>
+        <option value="Informatika">Informatika</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Teknik Elektro">Teknik Elektro</option>
+      </select>
+
+      <label>Jenis Kelamin</label>
+      <div class="pilihan">
+        <input type="radio" id="laki" name="gender" value="Laki-laki">
+        <label for="laki">Laki-laki</label>
+
+        <input type="radio" id="perempuan" name="gender" value="Perempuan">
+        <label for="perempuan">Perempuan</label>
+      </div>
+
+      <label>Minat</label>
+      <div class="pilihan">
+        <input type="checkbox" id="web" name="minat" value="Web">
+        <label for="web">Web</label>
+
+        <input type="checkbox" id="mobile" name="minat" value="Mobile">
+        <label for="mobile">Mobile</label>
+
+        <input type="checkbox" id="data" name="minat" value="Data">
+        <label for="data">Data</label>
+      </div>
+
+      <label for="alamat">Alamat</label>
+      <textarea id="alamat" name="alamat" placeholder="Masukkan alamat"></textarea>
+
+      <input type="submit" id="tombol" value="Daftar">
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>

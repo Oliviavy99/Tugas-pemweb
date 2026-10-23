@@ -1,0 +1,112 @@
+/* ===== Selector tag ===== */
+body {
+  font-family: Arial;
+  background-color: #eeeeee;
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+a {
+  color: darkblue;
+}
+
+/* ===== Selector class (pakai titik) ===== */
+/* Box: flexbox dengan arah kolom, jarak antar isi pakai gap */
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+/* Radio dan checkbox dijejer ke samping pakai flexbox */
+.pilihan {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* ===== Selector id (pakai #) ===== */
+#tombol {
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#tombol:hover {
+  background-color: blue;
+}
+
+/* ===== Desain form ===== */
+/* form juga flexbox kolom supaya label dan input tersusun ke bawah */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* label di dalam .pilihan tidak perlu tebal */
+.pilihan label {
+  font-weight: normal;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 80px;
+}
+
+/* ===== Desain tabel ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+}
+
+/* zebra stripes: baris genap warnanya beda */
+tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+/* hover effect: warna berubah saat kursor di atas baris */
+tr:hover {
+  background-color: lightblue;
+}
