@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Halaman Pendaftaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Pendaftaran</h1>
+
+  <div class="box">
+
+    <!-- method="get" supaya data masuk ke query string di URL -->
+    <!-- action="detail.html" artinya setelah submit pindah ke detail.html -->
+    <form action="detail.html" method="get">
+
+      <p>
+        Nama: <br>
+        <input type="text" name="nama">
+      </p>
+
+      <p>
+        Email: <br>
+        <input type="text" name="email">
+      </p>
+
+      <p>
+        Program Studi: <br>
+        <select name="prodi">
+          <option value="Informatika">Informatika</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Teknik Elektro">Teknik Elektro</option>
+        </select>
+      </p>
+
+      <p>
+        Alamat: <br>
+        <textarea name="alamat" rows="4"></textarea>
+      </p>
+
+      <input type="submit" id="tombol" value="Daftar">
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>

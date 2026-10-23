@@ -1,0 +1,68 @@
+/* ===== Selector tag ===== */
+body {
+  font-family: Arial;
+  background-color: #eeeeee;
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* ===== Selector class (pakai titik) ===== */
+/* Box untuk membungkus isi halaman */
+.box {
+  width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+/* ===== Selector id (pakai #) ===== */
+#tombol {
+  background-color: darkblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ===== Desain form ===== */
+input, select, textarea {
+  padding: 8px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+/* ===== Desain tabel ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid gray;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: darkblue;
+  color: white;
+}
+
+/* zebra stripes: baris genap warnanya beda */
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+/* hover effect: warna berubah saat kursor di atas baris */
+tr:hover {
+  background-color: lightblue;
+}
